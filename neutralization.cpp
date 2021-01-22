@@ -30,7 +30,7 @@ int valence_acid_fn(string material_acid){
   // その他
   else{
     // 1価
-    if(material_acid=="HCl" ||material_acid=="HNO3"){
+    if(material_acid=="HCl" || material_acid=="HNO3"){
       valence=1;
       return valence;
     }
@@ -47,7 +47,7 @@ int valence_base_fn(string material_base){
   int valence,how_long;
   how_long=material_base.size();
   // 一価
-  if(material_base.at(how_long-1)=='H'){
+  if(material_base.at(how_long-1)=='H' || material_base=="KOH"){
     valence=1;
     return valence;
   }
