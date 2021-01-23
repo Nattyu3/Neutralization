@@ -303,6 +303,7 @@ OTHER: // continue
       cout<<material_base<<"は"
           <<valence_base<<"価の弱塩基"<<endl;
     }
+
     cout<<"続ける→1 始めから→2 終了→0 : ";
     cin>>continue_check;
     if(continue_check==1){
