@@ -231,7 +231,7 @@ OTHER: // continue
       else{
         salt+=ion_first(material_base)+c_acid_s;
         // 原子団
-        if(valence_base_fn(material_base)!=1){
+        if(valence_base_fn(material_base)!=1 && material_acid!="HCl"){
           salt+="(" + ion_second(material_acid) + ")";
           salt+=c_base_s;
         }
