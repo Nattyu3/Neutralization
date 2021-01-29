@@ -116,13 +116,13 @@ string ion_second(string material){
 int main(){
   cout<<"中和反応系の問題を解くプログラム"<<endl;
 
-BEGIN: // 最初からを選択した場合
+ BEGIN: // 最初からを選択した場合
   string material_acid,material_base;
   printf("物質(酸性)の化学式を入力 (例:CH3COOH) : "); cin>>material_acid;
   printf("物質(塩基)の化学式を入力 (例:Ba(OH)2) : "); cin>>material_base;
   int valence_acid=valence_acid_fn(material_acid),valence_base=valence_base_fn(material_base);
 
-OTHER: // continue
+ OTHER: // continue
   int continue_check;
   printf("計算問題→1 反応式→2 何価の何→3 終了→0 : ");
   int problem; cin>>problem;
